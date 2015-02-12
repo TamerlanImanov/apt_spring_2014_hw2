@@ -6,9 +6,7 @@ import os
 def index():
     name = 'APT Spring 2015'
     participants = [
-
        'Tamerlan Imanov',
-
         "#20 Robert Pattinson",
         "#19 Kesha",
         "#18 Megan Fox",
@@ -41,4 +39,4 @@ def index():
     </ul>
     """, course=name, lst=participants)
 
-run(host="localhost", port=int(os.environ.get("PORT", 5000)))
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
